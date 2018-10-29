@@ -1,14 +1,14 @@
 # node2vec on spark
 
+This library  is refactor and optimization based on https://github.com/aditya-grover/node2vec/tree/master/node2vec_spark
 This library is a implementation using scala for running on spark of *node2vec* as described in the paper:
 > node2vec: Scalable Feature Learning for Networks.
 > Aditya Grover and Jure Leskovec.
 > Knowledge Discovery and Data Mining, 2016.
 > <Insert paper link>
 
-This library  is refactor and optimization based on https://github.com/aditya-grover/node2vec/tree/master/node2vec_spark
 
-The *node2vec* algorithm learns continuous representations for nodes in any (un)directed, (un)weighted graph. Please check the [project page](https://snap.stanford.edu/node2vec/) for more details. 
+The *node2vec* algorithm learns continuous representations for nodes in any (un)directed, (un)weighted graph. 
 
 
 ### Building node2vec_spark
@@ -20,7 +20,6 @@ Maven 3.0.5 or newer<br/>
 Java 7+<br/>
 Scala 2.10 or newer.
 
-This will produce jar file in "node2vec_spark/target/"
 
 ### Examples
 This library has two functions: *randomwalk* and *embedding*. <br/> 
