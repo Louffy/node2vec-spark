@@ -22,6 +22,7 @@ object Main {
                     window: Int = 10,
                     walkLength: Int = 80,
                     numWalks: Int = 10,
+                    minCount: Int = 0,
                     p: Double = 1.0,
                     q: Double = 1.0,
                     weighted: Boolean = true,
@@ -48,6 +49,18 @@ object Main {
     opt[Int]("iter")
             .text(s"iter: ${defaultParams.iter}")
             .action((x, c) => c.copy(iter = x))
+    opt[Int]("window")
+            .text(s"window: ${defaultParams.window}")
+            .action((x, c) => c.copy(window = x))
+    opt[Int]("numPartition")
+            .text(s"numPartition: ${defaultParams.numPartition}")
+            .action((x, c) => c.copy(numPartition = x))
+    opt[Int]("minCount")
+        .text(s"minCount: ${defaultParams.minCount}")
+        .action((x, c) => c.copy(minCount = x))
+    opt[Double]("lr")
+            .text(s"return parameter lr: ${defaultParams.lr}")
+            .action((x, c) => c.copy(lr = x))
     opt[Double]("p")
             .text(s"return parameter p: ${defaultParams.p}")
             .action((x, c) => c.copy(p = x))
